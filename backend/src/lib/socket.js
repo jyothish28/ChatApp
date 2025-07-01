@@ -8,6 +8,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: ["https://chatapp-frontend-gep4.onrender.com"],
+    credentials: true,
   },
 });
 
